@@ -83,15 +83,15 @@
         <div class="contactus__form">
           <form id="contactus-form" action="#">
             <div class="form-item">
-              <input id="name2" type="text" placeholder="Name" />
+              <input id="name2" type="text" placeholder="Name" required />
               <p class="form-item__invalid--name">Can't be empty</p>
             </div>
             <div class="form-item">
-              <input id="email" type="email" placeholder="Email Address" />
+              <input id="email" type="email" placeholder="Email Address" required/>
               <p class="form-item__invalid--email">Email invalid</p>
             </div>
             <div class="form-item">
-              <input id="phone" type="text" placeholder="Phone" />
+              <input id="phone" type="text" placeholder="Phone" required/>
               <p class="form-item__invalid--phone">Can't be empty</p>
             </div>
             <div class="form-item">
@@ -101,6 +101,7 @@
                 cols="3"
                 rows="3"
                 placeholder="Your Message"
+                required
               ></textarea>
               <p class="form-item__invalid--message">Can't be empty</p>
             </div>

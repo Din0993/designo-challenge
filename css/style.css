@@ -330,65 +330,29 @@ body {
   position: absolute;
   top: 18.7rem;
   left: 91rem;
-  font-style: italic; }
-  .form-item__invalid--name::after {
-    content: "";
-    position: absolute;
-    display: block;
-    background-image: url("/assets/contact/desktop/icon-error.svg");
-    background-repeat: none;
-    width: 2rem;
-    height: 2rem;
-    left: 10.5rem;
-    top: 0; }
+  font-style: italic;
+  display: none; }
 
 .form-item__invalid--email {
   position: absolute;
   top: 26.4rem;
   left: 91rem;
-  font-style: italic; }
-  .form-item__invalid--email::after {
-    content: "";
-    position: absolute;
-    display: block;
-    background-image: url("/assets/contact/desktop/icon-error.svg");
-    background-repeat: none;
-    width: 2rem;
-    height: 2rem;
-    left: 10.5rem;
-    top: 0; }
+  font-style: italic;
+  display: none; }
 
 .form-item__invalid--phone {
   position: absolute;
   top: 34.2rem;
   left: 91rem;
-  font-style: italic; }
-  .form-item__invalid--phone::after {
-    content: "";
-    position: absolute;
-    display: block;
-    background-image: url("/assets/contact/desktop/icon-error.svg");
-    background-repeat: none;
-    width: 2rem;
-    height: 2rem;
-    left: 10.5rem;
-    top: 0; }
+  font-style: italic;
+  display: none; }
 
 .form-item__invalid--message {
   position: absolute;
   top: 41.8rem;
   left: 91rem;
-  font-style: italic; }
-  .form-item__invalid--message::after {
-    content: "";
-    position: absolute;
-    display: block;
-    background-image: url("/assets/contact/desktop/icon-error.svg");
-    background-repeat: none;
-    width: 2rem;
-    height: 2rem;
-    left: 10.5rem;
-    top: 0; }
+  font-style: italic;
+  display: none; }
 
 #name2 {
   outline: none;

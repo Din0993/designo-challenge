@@ -76,68 +76,72 @@
       top: 18.7rem;
       left: 91rem;
       font-style: italic;
-      &::after {
-        content: "";
-        position: absolute;
-        display: block;
-        background-image: url("/assets/contact/desktop/icon-error.svg");
-        background-repeat: none;
-        width: 2rem;
-        height: 2rem;
-        left: 10.5rem;
-        top: 0;
-      }
+      display: none;
+      // &::after {
+      //   content: "";
+      //   position: absolute;
+      //   display: block;
+      //   background-image: url("/assets/contact/desktop/icon-error.svg");
+      //   background-repeat: none;
+      //   width: 2rem;
+      //   height: 2rem;
+      //   left: 10.5rem;
+      //   top: 0;
+      // }
     }
     &--email {
       position: absolute;
       top: 26.4rem;
       left: 91rem;
       font-style: italic;
-      &::after {
-        content: "";
-        position: absolute;
-        display: block;
-        background-image: url("/assets/contact/desktop/icon-error.svg");
-        background-repeat: none;
-        width: 2rem;
-        height: 2rem;
-        left: 10.5rem;
-        top: 0;
-      }
+      display: none;
+      // &::after {
+      //   content: "";
+      //   position: absolute;
+      //   display: block;
+      //   background-image: url("/assets/contact/desktop/icon-error.svg");
+      //   background-repeat: none;
+      //   width: 2rem;
+      //   height: 2rem;
+      //   left: 10.5rem;
+      //   top: 0;
+      // }
     }
     &--phone {
       position: absolute;
       top: 34.2rem;
       left: 91rem;
       font-style: italic;
-      &::after {
-        content: "";
-        position: absolute;
-        display: block;
-        background-image: url("/assets/contact/desktop/icon-error.svg");
-        background-repeat: none;
-        width: 2rem;
-        height: 2rem;
-        left: 10.5rem;
-        top: 0;
-      }
+      display: none;
+      // &::after {
+      //   content: "";
+      //   position: absolute;
+      //   display: block;
+      //   background-image: url("/assets/contact/desktop/icon-error.svg");
+      //   background-repeat: none;
+      //   width: 2rem;
+      //   height: 2rem;
+      //   left: 10.5rem;
+      //   top: 0;
+      // }
     }
     &--message {
       position: absolute;
       top: 41.8rem;
       left: 91rem;
       font-style: italic;
-      &::after {
-        content: "";
-        position: absolute;
-        display: block;
-        background-image: url("/assets/contact/desktop/icon-error.svg");
-        background-repeat: none;
-        width: 2rem;
-        height: 2rem;
-        left: 10.5rem;
-        top: 0;
-      }
+      display: none;
+      // &::after {
+      //   content: "";
+      //   position: absolute;
+      //   display: block;
+      //   background-image: url("/assets/contact/desktop/icon-error.svg");
+      //   background-repeat: none;
+      //   width: 2rem;
+      //   height: 2rem;
+      //   left: 10.5rem;
+      //   top: 0;
+      // }
     }
   }
 }
