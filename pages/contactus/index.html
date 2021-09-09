@@ -1,0 +1,234 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5991df7afe.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Designo Website Agency Challenge</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="hamburger-menu-container">
+        <ul class="mobile-navigation">
+          <li class="mobile-navigation__item"><a
+            href="/pages/company/index.html"
+            class="mobile-navigation__link"
+            >Our Company</a
+          ></li>
+          <li class="mobile-navigation__item"><a
+            href="/pages/locations/index.html"
+            class="mobile-navigation__link"
+            >Locations</a
+          ></li>
+          <li class="mobile-navigation__item"><a
+            href="/pages/contactus/index.html"
+            class="mobile-navigation__link"
+            >Contact</a
+          ></li>
+        </ul>
+      </div>
+      <nav class="navigation">
+        <a href="/index.html"
+          ><img
+            src="/assets//shared/desktop/logo-dark.png"
+            alt="logo"
+            class="navigation__logo"
+        /></a>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a
+              href="/pages/company/index.html"
+              class="navigation__link navigation__link--light"
+              >Our Company</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a
+              href="/pages/locations/index.html"
+              class="navigation__link navigation__link--light"
+              >Locations</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link navigation__link--light"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <input class="navigation__menu-btn" type="checkbox" id="navigation__menu-btn" />
+        <label class="navigation__menu-icon" for="navigation__menu-btn"><span class="navigation__icon">
+      </nav>
+
+      <div class="contactus">
+        <div class="contactus__text">
+          <h1 class="heading-1--contactus">Contact Us</h1>
+          <p class="contactus__paragraph">
+            Ready to take it to the next level? Let’s talk about your project or
+            idea and find out how we can help your business grow. If you are
+            looking for unique digital experiences that’s relatable to your
+            users, drop us a line.
+          </p>
+        </div>
+
+        <div class="contactus__form">
+          <form id="contactus-form" action="#">
+            <div class="form-item">
+              <input id="name2" type="text" placeholder="Name" />
+              <p class="form-item__invalid--name">Can't be empty</p>
+            </div>
+            <div class="form-item">
+              <input id="email" type="email" placeholder="Email Address" />
+              <p class="form-item__invalid--email">Email invalid</p>
+            </div>
+            <div class="form-item">
+              <input id="phone" type="text" placeholder="Phone" />
+              <p class="form-item__invalid--phone">Can't be empty</p>
+            </div>
+            <div class="form-item">
+              <textarea
+                name="Message"
+                id="message"
+                cols="3"
+                rows="3"
+                placeholder="Your Message"
+              ></textarea>
+              <p class="form-item__invalid--message">Can't be empty</p>
+            </div>
+            <button
+              class="btn-white"
+              id="submit"
+              type="submit"
+              form="contactus-form"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="company__locations company__locations--contactus">
+        <div class="company__locations__canada">
+          <img
+            src="/assets/shared/desktop/illustration-canada.svg"
+            alt="ca illustration"
+            class="company__locations__canada__img"
+          />
+          <h3 class="heading-3 heading-3--companylocations">Canada</h3>
+          <button class="btn-peach btn-peach--companylocations">
+            See Location
+          </button>
+        </div>
+        <div class="company__locations__australia">
+          <img
+            src="/assets/shared/desktop/illustration-australia.svg"
+            alt="au illustration"
+            class="company__locations__australia__img"
+          />
+          <h3 class="heading-3 heading-3--companylocations">Australia</h3>
+          <button class="btn-peach btn-peach--companylocations">
+            See Location
+          </button>
+        </div>
+        <div class="company__locations__uk">
+          <img
+            src="/assets/shared/desktop/illustration-united-kingdom.svg"
+            alt="uk illustration"
+            class="company__locations__uk__img"
+          />
+          <h3 class="heading-3 heading-3--companylocations">United Kingdom</h3>
+          <button class="btn-peach btn-peach--companylocations">
+            See Location
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer footer--contactus">
+      <div class="footer__container">
+        <div class="footer__navigation">
+          <a href="/index.html"
+            ><img
+              src="/assets//shared/desktop/logo-light.png"
+              alt="logo"
+              class="footer__navigation__logo"
+          /></a>
+
+          <ul class="footer__navigation__list">
+            <li class="footer__navigation__item">
+              <a
+                href="/pages/company/index.html"
+                class="footer__navigation__link footer__navigation__link--dark"
+                >Our Company</a
+              >
+            </li>
+            <li class="footer__navigation__item">
+              <a
+                href="/pages/locations/index.html"
+                class="footer__navigation__link footer__navigation__link--dark"
+                >Locations</a
+              >
+            </li>
+            <li class="footer__navigation__item">
+              <a
+                href="#"
+                class="footer__navigation__link footer__navigation__link--dark"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          
+        </div>
+
+        <div class="footer__info">
+          <p class="footer__paragraph">
+            Designo Central Office <br />3886 Wellington Street <br />Toronto,
+            Ontario M9C 3J5
+          </p>
+          <p class="footer__paragraph">
+            Contact Us (Central Office) <br />P : +1 253-863-8967 <br />M :
+            contact@designo.com
+          </p>
+          <div class="footer__icons">
+            <img
+              src="/assets/shared/desktop/icon-facebook.svg"
+              alt="fb-icon"
+              class="footer__icon"
+            />
+            <img
+              src="/assets/shared/desktop/icon-youtube.svg"
+              alt="yt-icon"
+              class="footer__icon"
+            />
+            <img
+              src="/assets/shared/desktop/icon-twitter.svg"
+              alt="tw-icon"
+              class="footer__icon"
+            />
+            <img
+              src="/assets/shared/desktop/icon-pinterest.svg"
+              alt="pt-icon"
+              class="footer__icon"
+            />
+            <img
+              src="/assets/shared/desktop/icon-instagram.svg"
+              alt="ig-icon"
+              class="footer__icon"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>

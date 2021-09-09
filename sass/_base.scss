@@ -1,0 +1,62 @@
+//VARIABLES
+
+//Colors
+$peach: hsl(11, 73%, 66%);
+$light-peach: hsl(11, 100%, 80%);
+$light-peach-2: hsl(10, 79%, 94%);
+$black: hsl(270, 3%, 11%);
+$dark-gray: hsl(264, 5%, 20%);
+$white: hsl(0, 0%, 100%);
+$light-gray: hsl(210, 17%, 95%);
+$gray: hsl(0, 0%, 71%);
+//Fonts
+$font-primary: "Jost", sans-serif;
+
+//Breakpoints
+$bp-tablet: 75em;
+$bp-mobile: 47em;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.25%;
+}
+
+body {
+  font-family: $font-primary;
+  font-weight: 300;
+  line-height: 1.6;
+  overflow-x: hidden;
+  // width: 100vw;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 110rem;
+  margin: 0 auto;
+  @media only screen and (max-width: $bp-tablet) {
+    width: 69rem;
+  }
+  @media only screen and (max-width: $bp-mobile) {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(218, 218, 218, 0.76);
+  opacity: 1; /* Firefox */
+  // padding-left: 2rem;
+}

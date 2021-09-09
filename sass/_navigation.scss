@@ -1,0 +1,127 @@
+.navigation {
+  position: relative;
+  padding: 6rem 0;
+  width: 100%;
+  display: flex;
+  background-color: $white;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+  @media only screen and (max-width: $bp-mobile) {
+    padding: 4rem 3rem;
+  }
+  &__logo {
+    height: 2.5rem;
+    width: 20rem;
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+    @media only screen and (max-width: $bp-mobile) {
+      display: none;
+    }
+  }
+  &__item {
+    &:not(:first-of-type) {
+      margin-left: 4rem;
+    }
+  }
+
+  &__link {
+    &--light:link,
+    &--light:visited {
+      text-decoration: none;
+      color: $black;
+      border-bottom: 1px solid transparent;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      line-height: 1;
+      transition: all 0.2s;
+    }
+    &--light:hover,
+    &--light:active {
+      color: $black;
+      border-bottom: 1px solid $black;
+    }
+
+    &--dark:link,
+    &--dark:visited {
+      text-decoration: none;
+      color: $white;
+      border-bottom: 1px solid transparent;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      line-height: 1;
+      transition: all 0.2s;
+    }
+    &--dark:hover,
+    &--dark:active {
+      color: $white;
+      border-bottom: 1px solid $white;
+    }
+  }
+
+  &__menu-btn {
+    display: none;
+    // position: absolute;
+    // left: 72%;
+    // width: 25rem;
+    // height: 3rem;
+    // margin-left: auto;
+  }
+  &__menu-icon {
+    display: none;
+    cursor: pointer;
+    position: relative;
+    margin-left: auto;
+    user-select: none;
+    width: 2.8rem;
+    height: 2.8rem;
+
+    @media only screen and (max-width: $bp-mobile) {
+      display: block;
+    }
+  }
+  &__icon {
+    background: #333;
+    display: block;
+    height: 3px;
+    width: 100%;
+    transition: all 0.2s ease-out;
+
+    &::before,
+    &::after {
+      background: #333;
+      content: "";
+      display: block;
+      height: 3px;
+      position: absolute;
+      transition: all 0.2s ease-out;
+      width: 100%;
+    }
+    &::before {
+      top: 9px;
+    }
+    &::after {
+      top: 18px;
+    }
+  }
+
+  &__menu-btn:checked ~ &__menu-icon &__icon {
+    background: transparent;
+  }
+  &__menu-btn:checked ~ &__menu-icon &__icon::before {
+    transform: rotate(-45deg);
+    width: 100%;
+  }
+  &__menu-btn:checked ~ &__menu-icon &__icon::after {
+    transform: rotate(45deg);
+    width: 100%;
+    top: 1rem;
+  }
+}
+
+.navigation-active {
+  position: fixed;
+  background-color: $white;
+}

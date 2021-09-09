@@ -1,0 +1,223 @@
+.contactus {
+  display: flex;
+  height: 48rem;
+  background-color: $peach;
+  border-radius: 15px;
+
+  @media only screen and (max-width: $bp-tablet) {
+    flex-direction: column;
+    height: 75rem;
+    overflow: hidden;
+  }
+  @media only screen and (max-width: $bp-mobile) {
+    height: 90rem;
+    border-radius: 0;
+  }
+
+  &__text {
+    flex: 0 0 60%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 1;
+
+    @media only screen and (max-width: $bp-tablet) {
+      overflow: visible;
+      flex: 0 0 30%;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      background-image: url("/assets/contact/desktop/bg-pattern-hero-desktop.svg");
+      background-repeat: no-repeat;
+      width: 75rem;
+      height: 65rem;
+      top: -16.4rem;
+      z-index: 0;
+      pointer-events: none;
+      @media only screen and (max-width: $bp-tablet) {
+        left: -15rem;
+      }
+    }
+  }
+  &__form {
+    width: 100%;
+    flex: 1;
+    @media only screen and (max-width: $bp-tablet) {
+      margin-left: 5rem;
+    }
+    @media only screen and (max-width: $bp-mobile) {
+      width: 32rem;
+      margin: 0 auto;
+    }
+  }
+  // &-form {
+  // }
+}
+
+.form-item > * {
+  width: 85%;
+  color: $white;
+  font-size: 1.4rem;
+  font-weight: 500;
+  @media only screen and (max-width: $bp-mobile) {
+    width: 100%;
+  }
+}
+
+.form-item {
+  &__invalid {
+    &--name {
+      position: absolute;
+      top: 18.7rem;
+      left: 91rem;
+      font-style: italic;
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        background-image: url("/assets/contact/desktop/icon-error.svg");
+        background-repeat: none;
+        width: 2rem;
+        height: 2rem;
+        left: 10.5rem;
+        top: 0;
+      }
+    }
+    &--email {
+      position: absolute;
+      top: 26.4rem;
+      left: 91rem;
+      font-style: italic;
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        background-image: url("/assets/contact/desktop/icon-error.svg");
+        background-repeat: none;
+        width: 2rem;
+        height: 2rem;
+        left: 10.5rem;
+        top: 0;
+      }
+    }
+    &--phone {
+      position: absolute;
+      top: 34.2rem;
+      left: 91rem;
+      font-style: italic;
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        background-image: url("/assets/contact/desktop/icon-error.svg");
+        background-repeat: none;
+        width: 2rem;
+        height: 2rem;
+        left: 10.5rem;
+        top: 0;
+      }
+    }
+    &--message {
+      position: absolute;
+      top: 41.8rem;
+      left: 91rem;
+      font-style: italic;
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        background-image: url("/assets/contact/desktop/icon-error.svg");
+        background-repeat: none;
+        width: 2rem;
+        height: 2rem;
+        left: 10.5rem;
+        top: 0;
+      }
+    }
+  }
+}
+
+#name2 {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid $white;
+  margin-bottom: 4rem;
+  margin-top: 10%;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+
+  &:focus {
+    border-bottom: 3px solid $white;
+    padding-bottom: 0.8rem;
+  }
+}
+
+#email {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid $white;
+  margin-bottom: 4rem;
+  margin-top: 1rem;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+
+  &:focus {
+    border-bottom: 3px solid $white;
+    padding-bottom: 0.8rem;
+  }
+}
+
+#phone {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid $white;
+  margin-bottom: 4rem;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  &:focus {
+    border-bottom: 3px solid $white;
+    padding-bottom: 0.8rem;
+  }
+}
+
+#message {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid $white;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  padding-bottom: 4rem;
+  padding-left: 2rem;
+  resize: none;
+  &:focus {
+    border-bottom: 3px solid $white;
+    padding-bottom: 3.8rem;
+  }
+}
+
+#submit {
+  float: right;
+  margin-right: 6.5rem;
+  margin-top: 1rem;
+  padding: 2rem 4.5rem;
+  @media only screen and (max-width: $bp-tablet) {
+    margin-right: 10rem;
+    margin-top: 3rem;
+  }
+  @media only screen and (max-width: $bp-mobile) {
+    margin: 0;
+    margin-top: 3rem;
+    margin-left: 50%;
+    margin-right: 25%;
+  }
+}

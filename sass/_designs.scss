@@ -1,0 +1,168 @@
+.designs {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+  margin-top: 10rem;
+  @media only screen and (max-width: $bp-tablet) {
+    flex-direction: column;
+  }
+}
+
+.webdesign {
+  position: relative;
+  flex: 0 0 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 60rem;
+  background-image: url("/assets/home/desktop/image-web-design-large.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  opacity: 0.9;
+  transition: all 0.4s;
+  @media only screen and (max-width: $bp-tablet) {
+    background-image: url("/assets/home/tablet/image-web-design.jpg");
+    height: 25rem;
+  }
+  @media only screen and (max-width: $bp-mobile) {
+    background-image: url("/assets/home/mobile/image-web-design.jpg");
+    width: 32rem;
+    margin: 0 auto;
+  }
+  &--app {
+    height: 35rem;
+    @media only screen and (max-width: $bp-tablet) {
+      height: 25rem;
+    }
+  }
+  &:hover {
+    background-color: $light-peach;
+    background-blend-mode: multiply;
+    opacity: 1;
+  }
+  &__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__link {
+    text-decoration: none;
+    height: 50%;
+    width: 100%;
+  }
+}
+
+.otherdesigns {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  &__web {
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 35rem;
+    gap: 4rem;
+    @media only screen and (max-width: $bp-tablet) {
+      flex-direction: column;
+      margin-bottom: -35rem;
+      height: 50rem;
+    }
+    @media only screen and (max-width: $bp-mobile) {
+      width: 32rem;
+      margin: 0 auto;
+      margin-top: 10rem;
+      margin-bottom: -40rem;
+    }
+  }
+}
+
+.appdesign {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 20px;
+  background-image: url("/assets/home/desktop/image-app-design.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  transition: all 0.6s;
+
+  @media only screen and (max-width: $bp-tablet) {
+    background-image: url("/assets/home/tablet/image-app-design.jpg");
+    height: 25rem;
+  }
+  @media only screen and (max-width: $bp-mobile) {
+    background-image: url("/assets/home/mobile/image-app-design.jpg");
+    width: 32rem;
+    margin: 0 auto;
+  }
+
+  &:hover {
+    background-color: $light-peach;
+    background-blend-mode: multiply;
+    opacity: 1;
+  }
+  &__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__link {
+    text-decoration: none;
+    height: 50%;
+    width: 100%;
+    &--web {
+      height: 100%;
+    }
+  }
+}
+.graphicdesign {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 20px;
+  background-image: url("/assets/home/desktop/image-graphic-design.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  transition: all 0.4s;
+  @media only screen and (max-width: $bp-tablet) {
+    background-image: url("/assets/home/tablet/image-graphic-design.jpg");
+    height: 25rem;
+  }
+  @media only screen and (max-width: $bp-mobile) {
+    background-image: url("/assets/home/mobile/image-graphic-design.jpg");
+    width: 32rem;
+    margin: 0 auto;
+  }
+  &:hover {
+    background-color: $light-peach;
+    background-blend-mode: multiply;
+    opacity: 1;
+  }
+  &__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__link {
+    text-decoration: none;
+    height: 50%;
+    width: 100%;
+    &--web {
+      height: 100%;
+    }
+  }
+}

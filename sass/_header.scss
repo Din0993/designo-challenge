@@ -1,0 +1,110 @@
+.header {
+  position: relative;
+  background-color: $peach;
+  width: 100%;
+  height: 64rem;
+  display: flex;
+  border-radius: 12px;
+  overflow: hidden;
+  @media only screen and (max-width: $bp-tablet) {
+    flex-direction: column;
+    height: 90rem;
+  }
+  @media only screen and (max-width: $bp-mobile) {
+    width: 100%;
+    border-radius: 0;
+    height: 95rem;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background: url("/assets/shared/desktop/bg-pattern-leaf.svg");
+    background-repeat: no-repeat;
+    width: 100rem;
+    height: 60rem;
+    z-index: -1;
+    left: -50rem;
+    top: 45rem;
+  }
+  &__container {
+    padding: 12rem 7rem;
+    flex: 0 0 40%;
+    @media only screen and (max-width: $bp-mobile) {
+      flex: 0 0 45%;
+    }
+  }
+  &__phone {
+    flex: 0 0 60%;
+    @media only screen and (max-width: $bp-mobile) {
+      flex: 1;
+    }
+    &--img {
+      margin-left: 4rem;
+      @media only screen and (max-width: $bp-mobile) {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 6rem;
+        width: 50rem;
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 13rem;
+      left: 25rem;
+      display: block;
+      width: 100%;
+      height: 100%;
+      transform: scale(1.088);
+      background-image: url("/assets/home/desktop/bg-pattern-hero-home.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__heading {
+    position: absolute;
+    width: 50%;
+    @media only screen and (max-width: $bp-tablet) {
+      width: 75%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      text-align: center;
+    }
+    @media only screen and (max-width: $bp-mobile) {
+      width: 32rem;
+    }
+  }
+
+  &__paragraph {
+    position: absolute;
+    width: 37%;
+    top: 29rem;
+    @media only screen and (max-width: $bp-tablet) {
+      width: 65%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      text-align: center;
+    }
+    @media only screen and (max-width: $bp-mobile) {
+      width: 32rem;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 40rem;
+    @media only screen and (max-width: $bp-tablet) {
+      left: 39%;
+      right: 0;
+      // margin: 0 auto;
+    }
+    @media only screen and (max-width: $bp-mobile) {
+      top: 44rem;
+      left: 34%;
+    }
+  }
+}

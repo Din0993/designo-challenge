@@ -1,0 +1,165 @@
+.company {
+  &__aboutus {
+    display: flex;
+    margin-bottom: 10rem;
+    @media only screen and (max-width: $bp-tablet) {
+      flex-direction: column-reverse;
+    }
+  }
+  &__talent {
+    display: flex;
+    margin-bottom: 10rem;
+    @media only screen and (max-width: $bp-tablet) {
+      flex-direction: column;
+    }
+  }
+  &__locations {
+    margin: 20rem 0;
+    display: flex;
+    justify-content: space-between;
+    @media only screen and (max-width: $bp-tablet) {
+      flex-direction: column;
+      & > * {
+        margin-bottom: 5rem;
+      }
+    }
+    &__canada {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &__img {
+        background-image: url("/assets/shared/desktop/bg-pattern-small-circle.svg");
+      }
+    }
+    &__australia {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &__img {
+        background-image: url("/assets/shared/desktop/bg-pattern-small-circle.svg");
+      }
+    }
+    &__uk {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &__img {
+        background-image: url("/assets/shared/desktop/bg-pattern-small-circle.svg");
+      }
+    }
+    &--contactus {
+      margin: 20rem 0;
+      margin-bottom: 0;
+    }
+  }
+  &__realdeal {
+    display: flex;
+    margin-top: 10rem;
+    @media only screen and (max-width: $bp-tablet) {
+      flex-direction: column-reverse;
+      margin-top: 0;
+      margin-bottom: -40rem;
+    }
+  }
+}
+
+.aboutus {
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $peach;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    @media only screen and (max-width: $bp-tablet) {
+      border-bottom-right-radius: 15px;
+      border-top-left-radius: 0px;
+      height: 34rem;
+    }
+    @media only screen and (max-width: $bp-mobile) {
+      border-radius: 0;
+    }
+  }
+  &__img {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    @media only screen and (max-width: $bp-tablet) {
+      border-top-left-radius: 15px;
+      border-bottom-right-radius: 0px;
+      background-image: url("/assets/about/tablet/image-about-hero.jpg");
+      height: 34rem;
+      width: 100%;
+    }
+    @media only screen and (max-width: $bp-mobile) {
+      border-radius: 0;
+    }
+  }
+}
+
+.talent {
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $light-peach-2;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    @media only screen and (max-width: $bp-tablet) {
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 15px;
+      height: 40rem;
+    }
+    @media only screen and (max-width: $bp-mobile) {
+      border-radius: 0;
+      height: 54rem;
+    }
+  }
+  &__img {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    @media only screen and (max-width: $bp-tablet) {
+      border-top-right-radius: 15px;
+      border-bottom-left-radius: 0px;
+      background-image: url("/assets/about/tablet/image-world-class-talent.jpg");
+      height: 34rem;
+      width: 100%;
+    }
+    @media only screen and (max-width: $bp-mobile) {
+      border-radius: 0;
+    }
+  }
+}
+
+.realdeal {
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $light-peach-2;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    @media only screen and (max-width: $bp-tablet) {
+      border-bottom-right-radius: 15px;
+      border-top-left-radius: 0px;
+      height: 44rem;
+    }
+    @media only screen and (max-width: $bp-mobile) {
+      border-radius: 0;
+      height: 54rem;
+    }
+  }
+  &__img {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    @media only screen and (max-width: $bp-tablet) {
+      border-top-left-radius: 15px;
+      border-bottom-right-radius: 0px;
+      background-image: url("/assets/about/tablet/image-real-deal.jpg");
+      height: 34rem;
+      width: 100%;
+    }
+    @media only screen and (max-width: $bp-mobile) {
+      border-radius: 0;
+    }
+  }
+}
